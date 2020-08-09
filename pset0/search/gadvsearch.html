@@ -10,16 +10,24 @@
                 <li><a href="index.html">Google Search</a></li>
             </ul>
         </div>
-        <div class="main">
+        <div class="advSearch">
+            <h1>Advanced Search</h1>
+            <hr>
             <div>
-                <img src="imageSearch.png">
-            </div>
-            <div>
-                <form action="https://google.com/search">
-                    <input id="searchField" type="text" name="q">
-                    <input class="searchButton" type="submit" value="Google Search">
+                <form action="https://google.com/search"></form>
+                    <div>
+                        <h2>Find pages with...</h2>
+                        <div>
+                            <div class="searchItem"><p>all these words:</p><input type="text" name="q"><p class="helper">Type the important words:  <span style="font-family: monospace; color:#666666">tricolor rat terrier</span></p></div>
+                            <div class="searchItem"><p>this exact word or phrase:</p><input type="text" name="q"><p class="helper">Put exact words in quotes:  <span style="font-family: monospace; color:#666666">"rat terrier"</span></p></div>
+                            <div class="searchItem"><p>any of these words:</p><input type="text" name="q"><p class="helper">Type OR between all the words you want:   <span style="font-family: monospace; color:#666666">miniature OR standard</span></p></div>
+                            <div class="searchItem"><p>none of these words:</p><input type="text" name="q"><p class="helper">Put a minus sign just before words you don't want:  <span style="font-family: monospace; color:#666666">-rodent, -"Jack Russell"</span></p></div>
+                            <div class="searchItem"><input class="advButton" type="submit" value="Advanced Search"></div>
+                        </div>
+                    </div>
                 </form>
             </div>
+            <hr>
         </div>
     </body>
 </html>
