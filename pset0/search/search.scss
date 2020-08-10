@@ -38,6 +38,7 @@ h2 {
     margin: auto;
     width: 50%;
     padding: 7% 0 0 0;
+    
     img {
         padding: .5em 0 1em 0;
         display: block;
@@ -49,7 +50,7 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: auto;
+        
         #searchField {
             width: 50%;
             border: 1px solid #DFE1E5;
@@ -61,16 +62,43 @@ h2 {
             padding: 10px 25px 10px 25px;
             color: #252525;
         }
-        .searchButton{
-            background-color: #F4F4F4;
-            border: 0px;
+        
+        .imageSearchBox{
+            
             margin-left: auto;
             margin-right: auto;
-            display: block;
-            padding: 10px 25px 10px 25px;
-            border-radius: 4px;
-            color: #5E6268;
+
+            .searchButton{
+                background-color: #F4F4F4;
+                border: 0px;
+                padding: 10px 25px 10px 25px;
+                border-radius: 4px;
+                color: #5E6268;   
+                display: block;
+                margin-left: auto;
+                margin-right: auto;             
+            }
+
         }
+
+        .searchBox{
+            margin-left: auto;
+            margin-right: auto;
+            width: 36%;
+
+            .searchButton{
+                background-color: #F4F4F4;
+                border: 0px;
+                padding: 10px 25px 10px 25px;
+                border-radius: 4px;
+                color: #5E6268;
+                margin-left: auto;
+                margin-right: auto;
+                display: inline-block;
+                
+            }
+        }
+
     }
 
 }
