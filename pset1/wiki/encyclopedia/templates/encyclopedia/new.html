@@ -6,6 +6,7 @@
 
 {% block body %}
 <h1>Add New Wiki Entry</h1>
+    {{ error|safe }}
 <form action="{% url 'new' %}" method="post">
     {% csrf_token %}
     {{ form }}

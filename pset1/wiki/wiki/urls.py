@@ -15,8 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls import handler404, handler500, url
+from django.http import HttpResponse
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('wiki/', include("encyclopedia.urls"))
+    path('wiki/', include("encyclopedia.urls")),
+    url(r'^robots.txt', lambda x: HttpResponse("User-Agent: *\nDisallow:", content_type="text/plain"), name="robots_file")
 ]
+
+handler404 = 'encyclopedia.views.handler404'
+handler500 = 'encyclopedia.views.handler500'
